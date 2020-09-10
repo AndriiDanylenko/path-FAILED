@@ -25,9 +25,9 @@ void fp_floyd(int ***Matrix/*, int ***WayMatrix*/) {
         }
     }
     
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            printf("arr[%d][%d] = %d\n", i, j, (*Matrix)[i][j]);
-        }
-    }
+    // for (int i = 0; i < N; i++) {
+    //     for (int j = 0; j < N; j++) {
+    //         printf("arr[%d][%d] = %d\n", i, j, (*Matrix)[i][j]);
+    //     }
+    // }
 }
