@@ -43,19 +43,20 @@ Matrix, WayMatrix, Islands (for Floyd's algorithm).
 typedef struct island_lst {
     char *name;
     int number;
-    int *neighbours;
+    struct island_lst **const_neighbours;
+    struct island_lst **temp_neighbours;
     struct island_lst *next;
     struct island_lst *previous;
-    int previous_neighbour;
+    struct island_lst *previous_neighbour;
 }              island_list;
 
-island_list *store_create_island(char *name, int number);
-void store_push_back_island(island_list **head, char *name, int number);
+island_list *store_create_island(char *name, int number, int island_amount);
+void store_push_back_island(island_list **head, char *name, int number, int island_amount);
 void fp_store_data(char ***Islands, int ***Matrix, const char *filename, int ***WayMatrix, 
                     island_list **islandlist);
 
 void IslandArray(char ***Islands, const char *filename);
-island_list *fill_island_list(char **Islands);
+island_list *fill_island_list(char **Islands, int **WayMatrix);
 void FillTheMatrix(int ***Matrix, char **Islands, const char *filename);
 void FillTheWayMatrix(int ***WayMatrix, int ***Matrix);
 char *Reverse_2_words(char *str, char *delim);
