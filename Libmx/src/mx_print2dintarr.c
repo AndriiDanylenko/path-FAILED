@@ -3,7 +3,7 @@
 
 void mx_print2d_sqrintarr(int **arr, char *title) {
     if (!arr) {
-        write(2, MX_PRINT2DINTARR_NO_ARR, mx_strlen(MX_PRINT2DINTARR_NO_ARR));
+        mx_printstr(MX_PRINT2DINTARR_NO_ARR);
         exit(1);
     }
     int len = 0;
