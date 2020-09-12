@@ -14,6 +14,8 @@
 
 
 //My pack:
+void mx_print2d_sqrintarr(int **arr, char *title);
+void mx_copy_sqrtintarr(int **src, int ***dest);
 int mx_getindex_foundstr(char *what, char **where, unsigned int begin_with);
 char *mx_copyfoundstr(char *what, char **where, unsigned int begin_with);
 char **mx_copy_strarrchar(char **strarr, char stop);
