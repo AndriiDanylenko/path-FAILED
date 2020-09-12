@@ -42,18 +42,18 @@ static void error_handling(int **src, int ***dest) {
     }
 }
 
-int main () {
-    int **arr = mx_intarrnew(5);
-    for (int i = 0; i < 5; i++) 
-        arr[i] = mx_intnew(5);
-    for (int j = 0; j < 5; j++) {
-        for (int i = 0; i < 5; i++) {
-            arr[j][i] = -4;
-        }
-    }
-    int **newarr = NULL;
-    mx_copy_sqrtintarr(arr, &newarr);
-    mx_print2d_sqrintarr(newarr, "newarr");
-    return 0;
-}
+// int main () {
+//     int **arr = mx_intarrnew(5);
+//     for (int i = 0; i < 5; i++) 
+//         arr[i] = mx_intnew(5);
+//     for (int j = 0; j < 5; j++) {
+//         for (int i = 0; i < 5; i++) {
+//             arr[j][i] = -4;
+//         }
+//     }
+//     int **newarr = NULL;
+//     mx_copy_sqrtintarr(arr, &newarr);
+//     mx_print2d_sqrintarr(newarr, "newarr");
+//     return 0;
+// }
 
